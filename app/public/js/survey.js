@@ -26,9 +26,11 @@ const submit = function(e){
             $('question10').val(),
         ]
     };
-$.post('/api/employees', strUser)
 
-}
+
+$('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+  })
 
 const employeeSelection = function (selection, submit) {
 
