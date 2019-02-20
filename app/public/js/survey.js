@@ -5,7 +5,7 @@ const strUser = e.options[e.selectedIndex].value
 
 const results = function(){
     answers.push(document.getElementById("strUser").value)
-    employeeSelection.push("${"newEmployee"}")
+    employeeSelection.push(`${newEmployee}`)
 }
 
 const submit = function(e){
@@ -25,7 +25,7 @@ const submit = function(e){
             $('question9').val(),
             $('question10').val(),
         ]
-    };
+    }};
 
 
 $('#myModal').on('shown.bs.modal', function () {
