@@ -1,162 +1,202 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Survey</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/survey.js"></script>
+  </head>
+  <body>
     <h2>Survey Questions</h2>
-    <hr class="my-4">
+    <hr class="my-4" />
     <h3 id="about">About You</h3>
-<form>
-    <div class="form-group">
+    <form>
+      <div class="form-group">
         <label>Name (required)</label>
-        <input id="name" class="form-control" type="text">
+        <input id="name" class="form-control" type="text" />
         <label>Link to Photo Image (required)</label>
-        <input id="link" class="form-control" type="text">
-    </div>
-</form>
-    <hr class="my-4">
-<form>
-    <div class="form-group">
+        <input id="link" class="form-control" type="text" />
+      </div>
+    </form>
+    <hr class="my-4" />
+    <form>
+      <div class="form-group">
         <h2>Question 1</h2>
         <label>Being early is on time, and being on time is late.</label>
-        <select class="form-control" id="select question1">
-                <option>1 (Strongly Disagree)</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5 (Strongly Agree)</option>
+        <select class="form-control" id="question1">
+          <option>1 (Strongly Disagree)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Strongly Agree)</option>
         </select>
-    </div>
-    <div class="form-group">
+      </div>
+      <div class="form-group">
         <h2>Question 2</h2>
-        <label>Generally speaking, you rely more on your experience than your imagination.</label>
-        <select class="form-control" id="select question2">
-                <option>1 (Strongly Disagree)</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5 (Strongly Agree)</option>
+        <label
+          >Generally speaking, you rely more on your experience than your
+          imagination.</label
+        >
+        <select class="form-control" id="question2">
+          <option>1 (Strongly Disagree)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Strongly Agree)</option>
         </select>
-    </div>
-    <div class="form-group">
+      </div>
+      <div class="form-group">
         <h2>Question 3</h2>
         <label>You rarely do something just out of sheer curiosity.</label>
-        <select class="form-control" id="select question3">
-                <option>1 (Strongly Disagree)</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5 (Strongly Agree)</option>
+        <select class="form-control" id="question3">
+          <option>1 (Strongly Disagree)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Strongly Agree)</option>
         </select>
-    </div>
-    <div class="form-group">
+      </div>
+      <div class="form-group">
         <h2>Question 4</h2>
         <label>Nickelback is the best band in the world.</label>
-        <select class="form-control" id="select question4">
-                <option>1 (Strongly Disagree)</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5 (Strongly Agree)</option>
+        <select class="form-control" id="question4">
+          <option>1 (Strongly Disagree)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Strongly Agree)</option>
         </select>
-    </div>
-    <div class="form-group">
+      </div>
+      <div class="form-group">
         <h2>Question 5</h2>
-        <label>It is often difficult for you to relate to other people’s feelings.</label>
-        <select class="form-control" id="select question5">
-                <option>1 (Strongly Disagree)</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5 (Strongly Agree)</option>
+        <label
+          >It is often difficult for you to relate to other people’s
+          feelings.</label
+        >
+        <select class="form-control" id="question5">
+          <option>1 (Strongly Disagree)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Strongly Agree)</option>
         </select>
-    </div>
-    <div class="form-group">
-            <h2>Question 6</h2>
-            <label>You walked in on your parents when you were younger and now it has scared you for life.</label>
-            <select class="form-control" id="select question6">
-                    <option>1 (Strongly Disagree)</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5 (Strongly Agree)</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <h2>Question 7</h2>
-            <label>You feel more energetic after spending time with a group of people.</label>
-            <select class="form-control" id="select question7">
-                    <option>1 (Strongly Disagree)</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5 (Strongly Agree)</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <h2>Question 8</h2>
-            <label>In a discussion, truth should be more important than people’s sensitivities.
-                </label>
-            <select class="form-control" id="select question8">
-                    <option>1 (Strongly Disagree)</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5 (Strongly Agree)</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <h2>Question 9</h2>
-            <label>I think that the sound level at discos, dances, rock concerts, and sporting events, in general, is too loud.</label>
-            <select class="form-control" id="select question9">
-                    <option>1 (Strongly Disagree)</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5 (Strongly Agree)</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <h2>Question 10</h2>
-            <label>How many times have you sneezed in the last month?</label>
-            <select class="form-control" id="select question10">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-            </select>
-        </div>
-    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
-</form>
-<hr class="my-4">
-<a href="../data/employees.js">API Employees List</a>
-</body>
-<!-- Here's where I tried to figured out how modals work -->
-<div class="modal" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Your New Employee Is....</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p class="newEmployee"></p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Got it!</button>
+      </div>
+      <div class="form-group">
+        <h2>Question 6</h2>
+        <label
+          >You walked in on your parents when you were younger and now it has
+          scared you for life.</label
+        >
+        <select class="form-control" id="question6">
+          <option>1 (Strongly Disagree)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Strongly Agree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h2>Question 7</h2>
+        <label
+          >You feel more energetic after spending time with a group of
+          people.</label
+        >
+        <select class="form-control" id="question7">
+          <option>1 (Strongly Disagree)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Strongly Agree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h2>Question 8</h2>
+        <label
+          >In a discussion, truth should be more important than people’s
+          sensitivities.
+        </label>
+        <select class="form-control" id="question8">
+          <option>1 (Strongly Disagree)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Strongly Agree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h2>Question 9</h2>
+        <label
+          >I think that the sound level at discos, dances, rock concerts, and
+          sporting events, in general, is too loud.</label
+        >
+        <select class="form-control" id="question9">
+          <option>1 (Strongly Disagree)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Strongly Agree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h2>Question 10</h2>
+        <label>How many times have you sneezed in the last month?</label>
+        <select class="form-control" id="question10">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+      <button id="submit" type="submit" class="btn btn-primary btn-lg">
+        Submit
+      </button>
+    </form>
+    <hr class="my-4" />
+    <a href="../data/employees.js">API Employees List</a>
+    <div id="results-modal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title"><strong>Best Match</strong></h2>
+            <button class="close float-right" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <h2 id="match-name"></h2>
+            <img id="match-img" src="" alt="" width="100%" />
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+    Collapse
+  </body>
+  <!-- Here's where I tried to figured out how modals work -->
 </html>
